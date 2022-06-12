@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>invoice generator</title>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <h1 class="bold-text">Invoice creator</h1>
+            <p class="bold-text">Thanks for choosing Melprotocol, MEL!</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="choose-task">
+            <div class="container">
+                 <div class="flex underline">
+                     <button class="bold-text btn" id="wash-btn">Wash Car $10</button>
+                     <button class="bold-text btn" id="mow-btn">Mow Lawn $20</button>
+                     <button class="bold-text btn" id="pull-btn">Pull Weeds $30</button>
+                 </div>
+            </div>
+        </section>
+
+        <section class="list-task">
+            <div class="container underline">
+                <div class="bold-text small-text ">
+                    <span class="task-margin">Task</span>
+                    <span>Total</span>
+                </div>
+                <div class="flex ">
+                    <div class="flex-column bold-text">
+                        <span>Wash Car</span>
+                        <span>Mow Lawn</span>
+                        <span>Pull Weeds</span>
+                    </div>
+                    <div>
+                        <ul class="ul-el">
+                            <!-- <li>_</li>
+                            <li>_</li>
+                            <li>_</li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="total bold-text">
+            <div class="container">
+                <div class="#">
+                    <span class="note-margin">NOTE</span>
+                    <span>Total Amount</span>
+                </div>
+                <div class="flex">
+                    <p class="smaller-text">Multiple payment option, <span class="yellow">Cryptocurrency</span> or <span class="blue">Paypal</span></p>
+                    <p class="total-amount"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+            <div class="width container bold-text">
+                <a href="print.html"><span>✉️</span> Send invoice</a>
+            </div>
+    </footer>
+</body>
+<script src="app.js"></script>
+</html>
